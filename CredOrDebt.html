@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online-Banking</title>
+   <link rel="stylesheet" href="C:\web technology\self made\css\Banking.css">
+    </style>
+</head>
+
+<body>
+    <div id="options">
+        <h2><nav>Choose Debit or Credit:</nav></h2>
+        <button class="b" onclick="showDebitForms()">Debit</button>
+        <button class="b" onclick="showCreditForms()">Credit</button>
+    </div>
+
+    <div id="bankForm" class="hidden">
+        <h2><nav>Debit Using Bank Details:</nav></h2>
+        <form action="DebitByBankDetails" class="a">
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" placeholder="Account Number" name="Account Number" required>
+            <br>
+            <label for="HolderName">Holder Name:</label>
+            <input type="text" placeholder="Holder Name" name="Name" required>
+            <br>
+            <label for="MobileNumber">Mobile Number:</label>
+            <input type="text" placeholder="Mobile number" name="Mobile Number" required>
+            <br>
+            <label for="SecurityPin">SecurityPin:</label>
+            <input type="text" placeholder="SecurityPin" name="SecurityPin" required>
+            <br>
+            <label for="Amount">Amount:</label>
+            <input type="text" placeholder="Amount" name="Amount" required>
+            <br>
+            <button type="button" onclick="showDebitCardForm()">Debit Through Card Details</button>
+            <button type="submit">Debit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <div id="cardForm" class="hidden">
+        <h2><nav>Debit Using Card Details:</nav></h2>
+        <form action="DebitByCardDetails" class="a">
+            <label for="CardNumber">Card Number:</label>
+            <input type="text" placeholder="Card Number" name="CardNumber" required>
+            <br>
+            <label for="expiryDate">Expiry Year:</label>
+            <input type="text" name="ExpiryYear" placeholder="yy" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" placeholder="Cvv" name="Cvv" required>
+            <br>
+            <label for="SecurityPin">SecurityPin:</label>
+            <input type="text" placeholder="SecurityPin" name="SecurityPin" required>
+            <br>
+            <label for="Amount">Amount:</label>
+            <input type="text" placeholder="Amount" name="Amount" required>
+            <br>
+            <button type="button" onclick="showDebitBankForm()">Back to Bank Details</button>
+            <button type="submit">Debit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <div id="bankForm-credit" class="hidden">
+        <h2><nav>Credit Using Bank Details:</nav></h2>
+        <form action="CreditByBankDetails" class="a">
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" placeholder="Account Number" name="Account Number" required>
+            <br>
+            <label for="HolderName">Holder Name:</label>
+            <input type="text" placeholder="Holder Name" name="Name" required>
+            <br>
+            <label for="MobileNumber">Mobile Number:</label>
+            <input type="text" placeholder="Mobile number" name="Mobile Number" required>
+            <br>
+            <label for="SecurityPin">SecurityPin:</label>
+            <input type="text" placeholder="SecurityPin" name="SecurityPin" required>
+            <br>
+            <label for="Amount">Amount:</label>
+            <input type="text" placeholder="Amount" name="Amount" required>
+            <br>
+            <button type="button" onclick="showCreditCardForm()">Credit Through Card Details</button>
+            <button type="submit">Credit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <div id="cardForm-credit" class="hidden">
+        <h2><nav>Credit Using Card Details:</nav></h2>
+        <form action="CreditByCardDetails" class="a">
+            <label for="CardNumber">Card Number:</label>
+            <input type="text" placeholder="Card Number" name="CardNumber" required>
+            <br>
+            <label for "expiryDate">Expiry Year:</label>
+            <input type="text" name="ExpiryYear" placeholder="yy" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" placeholder="Cvv" name="Cvv" required>
+            <br>
+            <label for="SecurityPin">SecurityPin:</label>
+            <input type="text" placeholder="SecurityPin" name="SecurityPin" required>
+            <br>
+            <label for="Amount">Amount:</label>
+            <input type="text" placeholder="Amount" name="Amount" required>
+            <br>
+            <button type="button" onclick="showCreditBankForm()">Back to Bank Details</button>
+            <button type="submit">Credit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <script src="C:\web technology\self made\js\Banking.js">
+       
+    </script>
+</body>
+
+</html>
